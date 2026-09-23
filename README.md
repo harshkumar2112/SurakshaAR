@@ -68,6 +68,36 @@ The **SurakshaAR Personal Safety System** revolutionizes urban safety by combini
 |  * User Emergency Contacts   * AR Anchors & Point Cloud Cache   |
 |  * Live Telemetry Logs       * Audit & Alert Logs               |
 +-----------------------------------------------------------------+
+### 2. RTV-HD – Real-Time Visual Hazard Detection
+
+**Edge-AI Computer Vision Threat Engine**
+
+An automated low-latency vision pipeline detecting unlit corridors, suspicious objects, and blind corners in real-time.
+
+#### How It Works
+
+```text
+Camera Feed -> Low-Light Enhancement -> YOLOv8 Detection -> Threat Classifier -> Spatial Audio Alert -> Event Logging
+Threat Level = (Object Proximity Weight) + (Ambient Dark Ratio x Light Factor) + Historical Risk Multiplier
+SOS Trigger -> Anchor Capture -> Media Buffer -> WebSocket Transmission -> Responder Alert -> Telemetry Tracking
+GPS Scan -> Geofence Filter -> Spatial Node Fetch -> World Anchor Conversion -> Floating Badge Rendering
+User Incident Snap -> Metadata Check -> AI Image Verification -> Grid Heatmap Mapping -> Public Warning Push
+Unity (AR Foundation / ARCore / ARKit) • C# • Flutter (Companion Mobile App)
+Node.js / Python FastAPI • WebSockets • Redis • PostGIS
+YOLOv8 • OpenCV • TensorFlow Lite • PyTorch
+MongoDB • PostgreSQL (Geospatial Indexes)
+Unity Hub >= 2022.3 LTS
+Node.js >= 18.x
+Python >= 3.9
+Android Studio (ARCore Support) / Xcode (ARKit Support)
+git clone [https://github.com/harshkumar2112/SurakshaAR.git](https://github.com/harshkumar2112/SurakshaAR.git)
+cd SurakshaAR
+cd backend
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+python main.py
            ^                      ^                      ^
            |                      |                      |
     [AR Camera Feed]      [Device GPS / IMU]    [Community Reports]
