@@ -44,3 +44,30 @@ The **SurakshaAR Personal Safety System** revolutionizes urban safety by combini
 ---
 
 ## System Architecture
+
+```text
++-----------------------------------------------------------------+
+|                     SURAKSHAAR ECOSYSTEM                        |
++-----------------------------------------------------------------+
+|                                                                 |
+|   +----------+  +----------+  +----------+  +----------+        |
+|   | Citizen  |  | Emergency|  | Security |  |  Admin   |        |
+|   | App (AR) |  | Contacts |  | Responders| | Console  |        |
+|   +----+-----+  +----+-----+  +----+-----+  +----+-----+        |
+|        |             |             |             |              |
++--------+-------------+-------------+-------------+--------------+
+|                      BACKEND SERVICES                           |
++-----------------------------------------------------------------+
+|  * Spatial Path Finding      * Hazard Detection Engine          |
+|  * SOS Broadcast Engine      * Geospatial Risk Scoring          |
+|  * Encrypted Telemetry       * Authentication & Access Control  |
++-----------------------------------------------------------------+
+|                        DATA LAYER                               |
++-----------------------------------------------------------------+
+|  * Safe Haven Database       * Incident Heatmap Records         |
+|  * User Emergency Contacts   * AR Anchors & Point Cloud Cache   |
+|  * Live Telemetry Logs       * Audit & Alert Logs               |
++-----------------------------------------------------------------+
+           ^                      ^                      ^
+           |                      |                      |
+    [AR Camera Feed]      [Device GPS / IMU]    [Community Reports]
